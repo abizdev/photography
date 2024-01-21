@@ -75,17 +75,18 @@ body {
   color: #6F6F6F;
   text-transform: uppercase;
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 .content__list a::before {
   content: '';
   position: absolute;
-  left:  50%;
   bottom: 0;
   width: 90%;
   height: 1px;
   background: #FFD115;
-  transform: translate(-50%, 0) scaleX(0);
-  transition: 0.3s ease-in-out;
+  transform: scaleX(0);
+  transition: 0.3s linear;
 }
 .content__list a:hover::before {
   transform: scaleX(1);
